@@ -382,8 +382,8 @@ a:hover {
   }
   .fa-bars-staggered{
     position: absolute;
-    top: 22px ;
-    right: 20px;
+    top: 17px ;
+    right: 23px;
     font-size: 17px;
     cursor: pointer;
   }
@@ -415,6 +415,13 @@ a:hover {
     text-align: center;
     font-size: 16px;
     max-width: 350px;
+   
+  }
+  .line-text{
+    margin-top: 40px;
+  }
+  .hero-container-2{
+    margin-top: -140px;
   }
   
 }
