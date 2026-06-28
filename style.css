@@ -480,7 +480,76 @@ a:hover {
   font-weight: 500;
 
 }
-
+.action-sec{
+  justify-self: center;
+  display: flex;
+  height:140px;
+  width: 91%;
+  background-color: rgb(10, 10, 10);
+  justify-content: space-between;
+  padding: 0px 50px 0px 50px;
+  align-items: center;
+  border-radius: 15px;
+  margin-top: 60px;
+}
+.action-btns{
+  display: flex;
+  gap: 10px;
+}
+  .btn-container{
+    display: flex;
+    padding: 11px 25px;
+    background-color: white;
+    border-radius: 50px;
+    gap: 20px;
+  }
+  .second-container{
+    background-color: black;
+    border: 1px solid white;
+  }
+  .action-btn{
+    background-color: white;
+    color: black;
+    border: none;
+     font-family: 'Inter Tight', sans-serif;
+     font-size: 16px;
+  }
+  .second-action-btn{
+    background-color: black;
+    color: white;
+  }
+.arrow-img-action{
+  height: 30px;
+  width: 30px;
+  border-radius: 50px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s ease;
+  color: white;
+}
+.second-arrow{
+  background-color: white;
+}
+.btn-container:hover .action-btn{
+  transform: translateX(60px);
+}
+.btn-container:hover .arrow-img-action{
+  transform: translateX(-140px) rotate(360deg);
+}
+.second-container:hover .second-action-btn{
+  transform: translateX(55px);
+}
+.second-container:hover .second-arrow{
+  transform: translateX(-120px) rotate(360deg);
+}
+.p-action{
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 1.5;
+  font-family: 'Inter Tight', sans-serif;
+}
 @media(max-width: 480px) {
   .btn {
     display: none;
@@ -606,11 +675,33 @@ a:hover {
   }
 
 }
+.action-sec{
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  text-align: center;
+  width: 95%;
+  margin-top: 30px;
+}
+.action-btns{
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+.p-action{
+  font-size: 22px;
+  max-width: 700px;
+}
+
 @media(max-width: 479px){
   .brand-align{
     display: flex;
     flex-direction: column;
     width: 100%;
+    gap: 15px;
   
   }
    .brand-box{
