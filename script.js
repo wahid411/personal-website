@@ -19,5 +19,7 @@ const io = new IntersectionObserver((entries) => {
 
 cards.forEach(card => io.observe(card));
 
+const progressBars = document.querySelectorAll(".progress"); window.addEventListener("load", () => { progressBars.forEach((bar) => { const width = bar.classList.contains("html") ? "95%" : bar.classList.contains("css") ? "90%" : bar.classList.contains("js") ? "85%" : bar.classList.contains("python") ? "80%" : "75%"; setTimeout(() => { bar.style.width = width; }, 300); }); });
+
 
 
