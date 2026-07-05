@@ -2,7 +2,7 @@ let navlinks = document.getElementById("navlinks");
 let menu_icon = document.getElementById("menu-icon");
 
 menu_icon.addEventListener("click", () => {
-    navlinks.classList.toggle("active");
+  navlinks.classList.toggle("active");
 });
 
 
@@ -21,5 +21,27 @@ cards.forEach(card => io.observe(card));
 
 const progressBars = document.querySelectorAll(".progress"); window.addEventListener("load", () => { progressBars.forEach((bar) => { const width = bar.classList.contains("html") ? "95%" : bar.classList.contains("css") ? "90%" : bar.classList.contains("js") ? "85%" : bar.classList.contains("python") ? "80%" : "75%"; setTimeout(() => { bar.style.width = width; }, 300); }); });
 
+
+
+
+  const boxes = document.querySelectorAll('.custom-img, .right-hand-content');
+
+const observer = new IntersectionObserver((entries) => {
+
+    entries.forEach((entry) => {
+
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      }
+
+    });
+
+}, {
+    threshold: 0.3
+});
+
+boxes.forEach((box) => {
+    observer.observe(box);
+});
 
 
