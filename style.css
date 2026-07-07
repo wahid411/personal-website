@@ -1123,6 +1123,113 @@ i{
   color: #1B1D1E;
   font-weight: 500;
 }
+.black-content{
+  width: 400px;
+  height: 480px;
+  border-radius: 20px;
+  background-color: #131414;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* padding: 0px 0px 10px 20px; */
+  padding-left: 30px;
+}
+.black-heading{
+  color: #ffffff;
+  font-size: 24px;
+  max-width:350px;
+}
+.black-img{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-right: 30px;
+  padding-bottom: 15px;
+
+}
+.black-image{
+  width: 350px;
+  border-radius: 10px;
+}
+.another-content{
+  width: 835px;
+  height: 500px;
+  background-color: #5abaeb18;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 30px 0px 30px 30px;
+}
+.custom-p-2{
+  color: #1B1D1E;
+  font-size: 16px;
+ font-family: 'Inter Tight',sans-serif;
+ font-weight: 600;
+ padding-bottom: 30px;
+}
+.new-heading{
+  font-size: 24px;
+  color: #1B1D1E;
+  font-family: 'Inter Tight',sans-serif;
+  font-weight: 500;
+
+}
+.text-block-1{
+  color: #1B1D1E;
+   font-family: 'Inter Tight',sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+.founder-1{
+  color: #1a191b99;
+  font-size: 14px;
+    font-family: 'Inter Tight',sans-serif;
+    font-weight: 500;
+}
+
+.new-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+/* LEFT BOX */
+.black-content{
+  transition:
+    transform 0.9s cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 0.9s ease;
+}
+
+.black-hidden{
+  opacity: 0;
+  transform: translateX(-120px);
+}
+
+/* RIGHT BOX */
+.another-content{
+  transition:
+    transform 0.9s cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 0.9s ease;
+}
+
+.another-hidden{
+  opacity: 0;
+  transform: translateX(120px);
+}
+
+/* SHOW */
+.show{
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* HOVER */
+.black-content:hover,
+.another-content:hover{
+  transform: translateX(0) scale(0.98);
+}
 
 @media (max-width: 991px) {
 
@@ -1479,6 +1586,20 @@ i{
   font-size: clamp(30px, 5vw, 48px);
   justify-self: center;
   margin-top: 30px;
+ }
+ .new-container{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+ }
+ .black-content{
+  width: 93%;
+ }
+ .another-content{
+  width: 93%;
+ }
+ .new-heading{
+  max-width: 350px;
  }
 
 

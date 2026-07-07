@@ -45,3 +45,28 @@ boxes.forEach((box) => {
 });
 
 
+
+
+const elements = document.querySelectorAll(
+  '.black-hidden, .another-hidden'
+);
+
+const observer2 = new IntersectionObserver((entries) => {
+
+  entries.forEach((entry) => {
+
+    if(entry.isIntersecting){
+
+      entry.target.classList.add('show');
+
+    }
+
+  });
+
+}, {
+  threshold: 0.3
+});
+
+elements.forEach((el) => {
+  observer2.observe(el);
+});
