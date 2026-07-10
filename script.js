@@ -70,3 +70,48 @@ const observer2 = new IntersectionObserver((entries) => {
 elements.forEach((el) => {
   observer2.observe(el);
 });
+
+const observer3 = new IntersectionObserver((entries)=>{
+    entries.forEach((entry)=>{
+        if(entry.isIntersecting){
+            entry.target.classList.add("show");
+        }
+    });
+},{
+    threshold:0.3
+});
+
+document.querySelectorAll(".innovative-container").forEach((item)=>{
+    observer3.observe(item);
+});
+
+// Heading
+
+const headingObserver = new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{
+        if(entry.isIntersecting){
+            entry.target.classList.add("show");
+        }
+    });
+},{
+    threshold:.3
+});
+
+headingObserver.observe(document.querySelector(".desgin-heading"));
+
+
+// Cards
+
+const cardObserver = new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{
+        if(entry.isIntersecting){
+            entry.target.classList.add("show");
+        }
+    });
+},{
+    threshold:.2
+});
+
+document.querySelectorAll(".desing-card").forEach(card=>{
+    cardObserver.observe(card);
+});
