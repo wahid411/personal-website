@@ -220,3 +220,5 @@ const observer8 = new IntersectionObserver((entries) => {
 document.querySelectorAll(".animate-faq").forEach((item) => {
   observer8.observe(item);
 });
+
+
